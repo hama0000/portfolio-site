@@ -5,6 +5,38 @@
     padding: 0;
 }
 
-h1{
+/* 全体のボックス */
+.wrapper{
+    display: flex;
+}
+
+/* サイドメニュー */
+.side-menu{
+    position: fixed;
+    width: 20vw;
+    height: 100vh;
     border: 1px solid black;
+    box-sizing: border-box;
+}
+
+/* メインパート */
+.main-part{
+    width: calc(100% - 20vw);
+    margin-left: auto;
+}
+
+/* 背景 固定 */
+.fixed-bg{
+    min-height: 100vh;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#top{
+    background-image: url(../image/boke12151229_TP_V.jpg);
+}
+
+/* コンテンツ */
+.contents{
+    height: 500px;
 }
