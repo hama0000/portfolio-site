@@ -3,10 +3,19 @@
 *{
     margin: 0;
     padding: 0;
+    cursor: default;
 }
 
 body{
     font-size: 16px;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
 }
 
 /* 全体のボックス */
@@ -38,19 +47,19 @@ body{
     display: table;
     width: 100%;
     height: 3.5rem;
-    list-style: none;
     text-align: center;
-    border: 1px solid black;
-    box-sizing: border-box;
-
 }
+.side-menu li:not(:last-child){
+    border-bottom: 1px solid black;
+}
+
 .side-menu a{
     display: table-cell;
     width: 100%;
     height: 100%;
     color: #000;
     vertical-align: middle;
-    text-decoration: none;
+    cursor: pointer;
 }
 .side-menu a:hover{
     background-color: aliceblue;
@@ -60,6 +69,11 @@ body{
 .main-part{
     width: calc(100% - 20vw);
     margin-left: auto;
+}
+
+/* トップページ */
+#home{
+    list-style: none;
 }
 
 /* 背景 固定 */
@@ -96,7 +110,21 @@ body{
     padding-left: 2rem;
 }
 .description h2{
-    margin-bottom: 1.5rem;
+    font-size: 2rem;
+}
+.description ul{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 2rem;
+    margin-bottom: .75rem;
+}
+.description li{
+    display: inline-block;
+    font-size: .7rem;
+    border: 1px solid black;
+    border-radius: 1rem;
+    padding: .2rem .3rem;
+    margin-left: .25rem;
 }
 .description p{
     margin-bottom: 1.5rem;
@@ -113,7 +141,17 @@ body{
     height: 100%;
     margin: 0 auto;
     color: #000;
-    text-decoration: none;
+    cursor: pointer;
+}
+
+#lH{
+    color: #000;
+}
+#lC{
+    color: #000;
+}
+#lJ{
+    color: #000;
 }
 
 /* 作品の写真 */
@@ -129,4 +167,13 @@ body{
 }
 #calculator{
     background-image: url(../image/calculator.png);
+}
+
+/* プロフィールページ */
+#profile{
+    width: inherit;
+}
+
+.none{
+    display: none;
 }

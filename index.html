@@ -14,38 +14,63 @@
         <div class="side-menu">
             <h1>Portfolio <br> site</h1>
             <ul>
-                <li><a href="#">Profile</a></li>
-                <li><a href="#">Language</a></li>
-                <li><a href="#">Work</a></li>
-                <li><a href="#">list4</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#profile">Profile</a></li>
+                <li><a href="#language">Language</a></li>
+                <li><a href="#work">Work</a></li>
             </ul>
         </div>
 
         <div class="main-part">
-            <div class="fixed-bg" id="top">
-                <p>hama</p>
-            </div>
+            <div class="panels" id="home">
 
-            <div class="contents" id="c1">
-                <div class="description">
-                    <h2>todo</h2>
-                    <p>シンプルなtodoアプリ</p>
-                    <div class="btn"><a href="https://hama0000.github.io/todo/">more</a></div>
+                <div class="fixed-bg" id="top">
+                    <p>hama</p>
                 </div>
-                <div class="image" id="todo"></div>
-            </div>
 
-            <div class="contents" id="c2">
-                <div class="description">
-                    <h2>calculator</h2>
-                    <p>シンプルな電卓アプリ</p>
-                    <div class="btn"><a href="https://hama0000.github.io/calculator/">more</a></div>
+                <div class="contents" id="c1">
+                    <div class="description">
+                        <h2>todo</h2>
+                        <ul>
+                            <li id="lH">HTML</li>
+                            <li id="lC">CSS</li>
+                            <li id="lJ">jQuery(JS)</li>
+                        </ul>
+                        <p>シンプルなtodoアプリ</p>
+                        <div class="btn"><a href="https://hama0000.github.io/todo/">more</a></div>
+                    </div>
+                    <div class="image" id="todo"></div>
                 </div>
-                <div class="image" id="calculator"></div>
+
+                <div class="contents" id="c2">
+                    <div class="description">
+                        <h2>calculator</h2>
+                        <ul class="useLang">
+                            <li id="lH">HTML</li>
+                            <li id="lC">CSS</li>
+                            <li id="lJ">jQuery(JS)</li>
+                        </ul>
+                        <p>シンプルな電卓アプリ</p>
+                        <div class="btn"><a href="https://hama0000.github.io/calculator/">more</a></div>
+                    </div>
+                    <div class="image" id="calculator"></div>
+                </div>
+
+                <div class="contents" id="c3">
+                    <p>ここは3番目のコンテンツ</p>
+                </div>
             </div>
 
-            <div class="contents" id="c3">
-                <p>ここは3番目のコンテンツ</p>
+            <div class="panels none" id="profile">
+                <p>ここはプロフィールページ</p>
+            </div>
+
+            <div class="panels none" id="language">
+                <p>ここは言語の学習状況を確認するページ</p>
+            </div>
+
+            <div class="panels none" id="work">
+                <p>ここは製作物の紹介ページ</p>
             </div>
 
         </div>
