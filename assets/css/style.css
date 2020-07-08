@@ -70,21 +70,40 @@ a{
     width: calc(100% - 20vw);
     margin-left: auto;
 }
+.panels{
+    /* width: inherit; */
+}
 
 /* トップページ */
 #home{
     list-style: none;
 }
 
+/* トップページのスライドショー */
+.slide{
+    /* width: inherit; */
+}
+
+
+.slide-image{
+    /* background-size: 75%; */
+    background-repeat: no-repeat;
+    background-position: 20vw top;
+    background-size: cover;
+}
+
 /* 背景 固定 */
 .fixed-bg{
     min-height: 100vh;
     background-attachment: fixed;
-    background-size: cover;
 }
 
 #top{
+
+    /* background-image: url(../image/todo.png); */
+    
     background-image: url(../image/boke12151229_TP_V.jpg);
+   
 }
 
 /* コンテンツ */
@@ -162,7 +181,7 @@ a{
 }
 
 /* 作品の写真 */
-.image{
+.contents-image{
     width: 45%;
     height: 100%;
     background-size: cover;
